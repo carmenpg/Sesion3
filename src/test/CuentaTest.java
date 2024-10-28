@@ -27,8 +27,12 @@ class CuentaTest {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testIngresar() {
+		fail("Prueba fallida");
 	}
 
+	@Test
+	void testSacar() {
+		fail("Prueba fallida");
+	}
 }

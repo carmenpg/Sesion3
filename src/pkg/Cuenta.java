@@ -1,5 +1,6 @@
 package pkg;
 
-public class Cuenta {
 
+public class Cuenta { 
+	
 }
