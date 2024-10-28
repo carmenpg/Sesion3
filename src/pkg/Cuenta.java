@@ -5,10 +5,25 @@ public class Cuenta {
 	
 	private double saldo;
 	
-	public double getSaldo() {
-		
-		return 200;
-		
+	
+	public Cuenta(){
+		saldo = 0;
+	}
+	
+	public double getSaldo(){ 
+		return saldo;
+	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public void ingresar(double importe) {
+		this.setSaldo(this.getSaldo() + importe);
+	}
+	
+	public void sacar(double importe) {
+		this.setSaldo(this.getSaldo() - importe);
 	}
 	
 }

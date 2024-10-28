@@ -12,9 +12,12 @@ import org.junit.jupiter.api.Test;
 import pkg.Cuenta;
 
 class CuentaTest {
+	
+	private static Cuenta cuenta;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		cuenta = new Cuenta();
 	}
 
 	@AfterAll
@@ -23,6 +26,7 @@ class CuentaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		cuenta.setSaldo(0);
 	}
 
 	@AfterEach
@@ -31,16 +35,14 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		fail("Prueba Fallida");
-		Cuenta c = new Cuenta();
-		assertEquals(200, c.getSaldo());
+		cuenta.ingresar(200);
+		assertEquals(200, cuenta.getSaldo());
 		
 	}
 
 	@Test
 	void testSacar() {
-		fail("Prueba Fallida");
-		Cuenta c = new Cuenta();
-		assertEquals(200, c.getSaldo());
+		cuenta.sacar(200);
+		assertEquals(-200, cuenta.getSaldo());
 	}
 }
