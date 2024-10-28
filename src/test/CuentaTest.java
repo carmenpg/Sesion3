@@ -1,5 +1,6 @@
 package test;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
@@ -7,6 +8,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import pkg.Cuenta;
 
 class CuentaTest {
 
@@ -28,11 +31,16 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		fail("Prueba fallida");
+		fail("Prueba Fallida");
+		Cuenta c = new Cuenta();
+		assertEquals(200, c.getSaldo());
+		
 	}
 
 	@Test
 	void testSacar() {
-		fail("Prueba fallida");
+		fail("Prueba Fallida");
+		Cuenta c = new Cuenta();
+		assertEquals(200, c.getSaldo());
 	}
 }
